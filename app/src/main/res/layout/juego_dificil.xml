@@ -4,37 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.greivin.memorialab01.JuegoFacil">
+    tools:context="com.example.greivin.memorialab01.JuegoDificil">
 
     <ImageButton
-        android:id="@+id/btn1"
+        android:id="@+id/btn01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="clickBoton"
         app:layout_constraintBottom_toTopOf="@+id/btn04"
-        app:layout_constraintEnd_toStartOf="@+id/btn2"
+        app:layout_constraintEnd_toStartOf="@+id/btn02"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pregunta" />
+        app:srcCompat="@drawable/pregunta"
+        android:onClick="clickBoton"/>
 
     <ImageButton
-        android:id="@+id/btn2"
+        android:id="@+id/btn02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="clickBoton"
         app:layout_constraintBottom_toTopOf="@+id/btn05"
         app:layout_constraintEnd_toStartOf="@+id/btn03"
-        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintStart_toEndOf="@+id/btn01"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pregunta" />
+        app:srcCompat="@drawable/pregunta"
+        android:onClick="clickBoton"/>
 
     <ImageButton
         android:id="@+id/btn03"
@@ -47,7 +47,7 @@
         android:onClick="clickBoton"
         app:layout_constraintBottom_toTopOf="@+id/btn06"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn2"
+        app:layout_constraintStart_toEndOf="@+id/btn02"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pregunta" />
 
@@ -63,7 +63,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btn07"
         app:layout_constraintEnd_toStartOf="@+id/btn05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn01"
         app:srcCompat="@drawable/pregunta" />
 
     <ImageButton
@@ -78,7 +78,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btn08"
         app:layout_constraintEnd_toStartOf="@+id/btn06"
         app:layout_constraintStart_toEndOf="@+id/btn04"
-        app:layout_constraintTop_toBottomOf="@+id/btn2"
+        app:layout_constraintTop_toBottomOf="@+id/btn02"
         app:srcCompat="@drawable/pregunta" />
 
     <ImageButton
@@ -100,40 +100,128 @@
         android:id="@+id/btn07"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="clickBoton"
+        app:layout_constraintBottom_toTopOf="@+id/btn10"
         app:layout_constraintEnd_toStartOf="@+id/btn08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn04"
-        app:srcCompat="@drawable/pregunta"
-        android:onClick="clickBoton"/>
+        app:srcCompat="@drawable/pregunta" />
 
     <ImageButton
         android:id="@+id/btn08"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="clickBoton"
+        app:layout_constraintBottom_toTopOf="@+id/btn11"
         app:layout_constraintEnd_toStartOf="@+id/btn09"
         app:layout_constraintStart_toEndOf="@+id/btn07"
         app:layout_constraintTop_toBottomOf="@+id/btn05"
-        app:srcCompat="@drawable/pregunta"
-        android:onClick="clickBoton"/>
+        app:srcCompat="@drawable/pregunta" />
 
     <ImageButton
         android:id="@+id/btn09"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="clickBoton"
+        app:layout_constraintBottom_toTopOf="@+id/btn12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn08"
         app:layout_constraintTop_toBottomOf="@+id/btn06"
-        app:srcCompat="@drawable/pregunta"
-        android:onClick="clickBoton"/>
+        app:srcCompat="@drawable/pregunta" />
 
+    <ImageButton
+        android:id="@+id/btn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickBoton"
+        app:layout_constraintBottom_toTopOf="@+id/btn13"
+        app:layout_constraintEnd_toStartOf="@+id/btn11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn07"
+        app:srcCompat="@drawable/pregunta" />
 
+    <ImageButton
+        android:id="@+id/btn11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickBoton"
+        app:layout_constraintBottom_toTopOf="@+id/btn14"
+        app:layout_constraintEnd_toStartOf="@+id/btn12"
+        app:layout_constraintStart_toEndOf="@+id/btn10"
+        app:layout_constraintTop_toBottomOf="@+id/btn08"
+        app:srcCompat="@drawable/pregunta" />
+
+    <ImageButton
+        android:id="@+id/btn12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickBoton"
+        app:layout_constraintBottom_toTopOf="@+id/btn15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn11"
+        app:layout_constraintTop_toBottomOf="@+id/btn09"
+        app:srcCompat="@drawable/pregunta" />
+
+    <ImageButton
+        android:id="@+id/btn13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickBoton"
+        app:layout_constraintEnd_toStartOf="@+id/btn14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn10"
+        app:srcCompat="@drawable/pregunta" />
+
+    <ImageButton
+        android:id="@+id/btn14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickBoton"
+        app:layout_constraintEnd_toStartOf="@+id/btn15"
+        app:layout_constraintStart_toEndOf="@+id/btn13"
+        app:layout_constraintTop_toBottomOf="@+id/btn11"
+        app:srcCompat="@drawable/pregunta" />
+
+    <ImageButton
+        android:id="@+id/btn15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickBoton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn14"
+        app:layout_constraintTop_toBottomOf="@+id/btn12"
+        app:srcCompat="@drawable/pregunta" />
 </android.support.constraint.ConstraintLayout>

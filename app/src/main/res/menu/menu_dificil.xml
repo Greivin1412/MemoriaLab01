@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/juego1"
+        android:title="Juego Básico" />
+    <item
+        android:id="@+id/salirD"
+        android:title="Salir" />
+</menu>
