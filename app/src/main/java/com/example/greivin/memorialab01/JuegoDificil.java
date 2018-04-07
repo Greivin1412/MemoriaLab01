@@ -33,7 +33,10 @@ public class JuegoDificil extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
             case R.id.salirD:
-                System.exit(0);
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
                 return true;
 
             case R.id.juego1:
@@ -193,7 +196,7 @@ public class JuegoDificil extends AppCompatActivity {
 
         if(juego.isGanado()){
             Toast.makeText(getBaseContext(), "Juego Completado", Toast.LENGTH_SHORT).show();
-            reset();
+           reset();
         }
 
     }

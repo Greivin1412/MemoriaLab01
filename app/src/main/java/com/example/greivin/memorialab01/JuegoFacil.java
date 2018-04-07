@@ -141,6 +141,7 @@ public class JuegoFacil extends AppCompatActivity {
                 }
                 break;
         }
+
         if(juego.isGanado()){
             Toast.makeText(getBaseContext(), "Juego Completado", Toast.LENGTH_SHORT).show();
             reset();
@@ -148,8 +149,6 @@ public class JuegoFacil extends AppCompatActivity {
     }
 
     public void reset(){
-
-
 
         ImageButton bton = findViewById(R.id.btn1);
         bton.setBackgroundColor(getResources().getColor(R.color.colorBoton));

@@ -15,8 +15,8 @@ import java.util.Random;
 
 public class Juego  extends AppCompatActivity {
 
-    List<Integer> lista ;//= new ArrayList<>(9);
-    int[] numeros;// = new int[9];
+    List<Integer> lista ;//= new ArrayList<>();
+    int[] numeros;// = new int[];
     boolean intento ,ganado;
     int numGuardado,ganes,total,resta;
     ImageButton botGuardado;
@@ -45,7 +45,7 @@ public class Juego  extends AppCompatActivity {
         this.ganes=0;
         this.resta = resta;
 
-        //Llenado de list con los numeros
+        //Llenado de list con los numeros (1,1,2,2,3,3,4,4 etc,etc)
         for(int i = 1; i<lista-resta; i++){
             this.lista.add(i);
             this.lista.add(i);
@@ -106,8 +106,6 @@ public class Juego  extends AppCompatActivity {
         }
     }
 
-
-
     public void primeraJugada(ImageButton boton, int numero){
         this.intento=true;
         boton.setClickable(false);
@@ -130,16 +128,12 @@ public class Juego  extends AppCompatActivity {
         }else{
             //pierde
             boton.setClickable(true);
+           // boton.setBackgroundColor(getResources().getColor(R.color.colorRed));    Se cae
             this.botGuardado.setClickable(true);
             ponerImagen(boton,this.numeros[numero]);
             return false;
         }
 
-    }
-
-    public void perdio(ImageButton boton,int color){
-        Contador contador = new Contador(2000,boton,color);
-        contador.start();
     }
 
     public void verificaJuego(){
@@ -152,10 +146,15 @@ public class Juego  extends AppCompatActivity {
     public void reiniciarFigura(ImageButton b,int color){
 
         b.setImageResource(R.drawable.pregunta);
-      b.setBackgroundColor(color);
+        b.setBackgroundColor(color);
         botGuardado.setImageResource(R.drawable.pregunta);
         botGuardado.setClickable(true);
 
+    }
+
+    public void perdio(ImageButton boton,int color){
+        Contador contador = new Contador(2000,boton,color);
+        contador.start();
     }
 
     public class Contador extends CountDownTimer {
@@ -183,5 +182,47 @@ public class Juego  extends AppCompatActivity {
             reiniciarFigura(boton,color);
         }
     }
+
+    /*public void reset(){
+
+        ImageButton bton = findViewById(R.id.btn1);
+        bton.setBackgroundColor(getResources().getColor(R.color.colorBoton));
+        bton.setImageResource(R.drawable.pregunta);
+        bton.setClickable(true);
+        bton = findViewById(R.id.btn2);
+        bton.setBackgroundColor(getResources().getColor(R.color.colorBoton));
+        bton.setImageResource(R.drawable.pregunta);
+        bton.setClickable(true);
+        bton = findViewById(R.id.btn03);
+        bton.setBackgroundColor(getResources().getColor(R.color.colorBoton));
+        bton.setImageResource(R.drawable.pregunta);
+        bton.setClickable(true);
+        bton = findViewById(R.id.btn04);
+        bton.setBackgroundColor(getResources().getColor(R.color.colorBoton));
+        bton.setImageResource(R.drawable.pregunta);
+        bton.setClickable(true);
+        bton = findViewById(R.id.btn05);
+        bton.setBackgroundColor(getResources().getColor(R.color.colorBoton));
+        bton.setImageResource(R.drawable.pregunta);
+        bton.setClickable(true);
+        bton = findViewById(R.id.btn06);
+        bton.setBackgroundColor(getResources().getColor(R.color.colorBoton));
+        bton.setImageResource(R.drawable.pregunta);
+        bton.setClickable(true);
+        bton = findViewById(R.id.btn07);
+        bton.setBackgroundColor(getResources().getColor(R.color.colorBoton));
+        bton.setImageResource(R.drawable.pregunta);
+        bton.setClickable(true);
+        bton = findViewById(R.id.btn08);
+        bton.setBackgroundColor(getResources().getColor(R.color.colorBoton));
+        bton.setImageResource(R.drawable.pregunta);
+        bton.setClickable(true);
+        bton = findViewById(R.id.btn09);
+        bton.setBackgroundColor(getResources().getColor(R.color.colorBoton));
+        bton.setImageResource(R.drawable.pregunta);
+        bton.setClickable(true);
+        azar(9,3);
+    }
+*/ //Se cae
 
 }

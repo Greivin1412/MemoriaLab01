@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.greivin.memorialab01.JuegoDificil">
+    tools:context="com.example.greivin.memorialab01.JuegoDificil"
+    android:background="@color/colorFondo">
 
     <ImageButton
         android:id="@+id/btn01"
@@ -18,7 +19,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn02"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pregunta"
+        android:src="@drawable/pregunta"
         android:onClick="clickBoton"/>
 
     <ImageButton
@@ -33,7 +34,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn03"
         app:layout_constraintStart_toEndOf="@+id/btn01"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pregunta"
+        android:src="@drawable/pregunta"
         android:onClick="clickBoton"/>
 
     <ImageButton
@@ -49,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn02"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pregunta" />
+        android:src="@drawable/pregunta" />
 
     <ImageButton
         android:id="@+id/btn04"
@@ -64,7 +65,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn01"
-        app:srcCompat="@drawable/pregunta" />
+        android:src="@drawable/pregunta" />
 
     <ImageButton
         android:id="@+id/btn05"
@@ -79,7 +80,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn06"
         app:layout_constraintStart_toEndOf="@+id/btn04"
         app:layout_constraintTop_toBottomOf="@+id/btn02"
-        app:srcCompat="@drawable/pregunta" />
+        android:src="@drawable/pregunta" />
 
     <ImageButton
         android:id="@+id/btn06"
@@ -94,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn05"
         app:layout_constraintTop_toBottomOf="@+id/btn03"
-        app:srcCompat="@drawable/pregunta" />
+        android:src="@drawable/pregunta" />
 
     <ImageButton
         android:id="@+id/btn07"
@@ -109,7 +110,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn04"
-        app:srcCompat="@drawable/pregunta" />
+        android:src="@drawable/pregunta" />
 
     <ImageButton
         android:id="@+id/btn08"
@@ -124,7 +125,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn09"
         app:layout_constraintStart_toEndOf="@+id/btn07"
         app:layout_constraintTop_toBottomOf="@+id/btn05"
-        app:srcCompat="@drawable/pregunta" />
+        android:src="@drawable/pregunta"/>
 
     <ImageButton
         android:id="@+id/btn09"
@@ -139,7 +140,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn08"
         app:layout_constraintTop_toBottomOf="@+id/btn06"
-        app:srcCompat="@drawable/pregunta" />
+        android:src="@drawable/pregunta" />
 
     <ImageButton
         android:id="@+id/btn10"
@@ -154,7 +155,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn07"
-        app:srcCompat="@drawable/pregunta" />
+        android:src="@drawable/pregunta" />
 
     <ImageButton
         android:id="@+id/btn11"
@@ -169,7 +170,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn12"
         app:layout_constraintStart_toEndOf="@+id/btn10"
         app:layout_constraintTop_toBottomOf="@+id/btn08"
-        app:srcCompat="@drawable/pregunta" />
+        android:src="@drawable/pregunta" />
 
     <ImageButton
         android:id="@+id/btn12"
@@ -184,7 +185,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn11"
         app:layout_constraintTop_toBottomOf="@+id/btn09"
-        app:srcCompat="@drawable/pregunta" />
+        android:src="@drawable/pregunta" />
 
     <ImageButton
         android:id="@+id/btn13"
@@ -197,7 +198,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn10"
-        app:srcCompat="@drawable/pregunta" />
+        android:src="@drawable/pregunta" />
 
     <ImageButton
         android:id="@+id/btn14"
@@ -210,7 +211,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn15"
         app:layout_constraintStart_toEndOf="@+id/btn13"
         app:layout_constraintTop_toBottomOf="@+id/btn11"
-        app:srcCompat="@drawable/pregunta" />
+        android:src="@drawable/pregunta" />
 
     <ImageButton
         android:id="@+id/btn15"
@@ -223,5 +224,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn14"
         app:layout_constraintTop_toBottomOf="@+id/btn12"
-        app:srcCompat="@drawable/pregunta" />
+        android:src="@drawable/pregunta" />
 </android.support.constraint.ConstraintLayout>
